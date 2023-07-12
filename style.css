@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-bottom;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
@@ -16,16 +16,21 @@ body {
     margin: 0 auto;
 }
 
-.swiper-buttom-prev::after {
-    font-size: 25px;
+.swiper-button-prev::after {
+    font-size: 30px;
 }
 
-.swiper-buttom-next::after {
-    font-size: 25px;
+.swiper-button-next::after {
+    font-size: 30px;
 }
 
-.swiper-buttom-prev {
-    color: #DB241B;    
+.swiper-button-prev {
+    color: #DB241B;
+}
+
+.swiper-button-next {
+    color: #DB241B;
+    right: 0;
 }
 
 .swiper-pagination-bullet {
@@ -70,9 +75,15 @@ body {
 
 .socials {
     display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .social {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     margin: 0 10px;
     height: 40px;
     width: 40px;
@@ -82,10 +93,6 @@ body {
 
 .social:hover {
     background-color: #DB241B;
-}
-
-.social img {
-    margin: 8px 0 0 10px;
 }
 
 .menu .navbar ul li {
@@ -169,8 +176,9 @@ body {
 }
 
 .slider-img img {
-    margin-right: 225px;
+    margin-right: 250px;
     width: 550px;
+    padding: 15px;
 }
 
 .products {
@@ -192,6 +200,8 @@ body {
     cursor: pointer;
     color: #A7A7A7;
     font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
@@ -210,6 +220,10 @@ body {
 .tabs input[type="radio"]:checked + label {
     border-bottom: 2px solid #DB241B;
     color: #FFFFFF;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
 }
 
 .product {

@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper-1", {
+const swiper = new Swiper(".mySwiper-1", {
     slidesPerView:1,
     spaceBetween:30,
     loop:true,
@@ -13,7 +13,7 @@ var swiper = new Swiper(".mySwiper-1", {
 
 });
 
-var swiper = new Swiper(".mySwiper-2", {
+const swiper2 = new Swiper(".mySwiper-2", {
     slidesPerView:3,
     spaceBetween: 20,
     loop:true,
@@ -36,13 +36,14 @@ var swiper = new Swiper(".mySwiper-2", {
     
 });
 
-let tabInputs = document.querySelectorAll(".tabInput");
+let tabInputs = document.querySelectorAll(".tabInput")
 
 tabInputs.forEach(function(input) {
 
     input.addEventListener('change', function() {
         let id = input.ariaValueMax;
         let thisSwiper = document.getElementById('swiper' + id);
+        thisSwiper.swiper.update();
     })
 
 });
