@@ -135,8 +135,12 @@ body {
 }
 
 .slider-txt {
+    display: flex;
+    flex-direction: column;
     margin-left: 85px;
     width: 50%;
+    gap: 30px;
+    align-items: center;
 }
 
 .slider-txt h1 {
@@ -152,18 +156,22 @@ body {
 }
 
 .botones {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botones a {
+    width: 200px;
+    text-align: center;
 }
 
 .btn-1 {
-    display: inline-block;
-    padding: 15px 35px;
     border: 2px solid #DB241B;
     color: #FFFFFF;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-right: 20px;
     border-radius: 50px;
 }
 
@@ -176,9 +184,7 @@ body {
 }
 
 .slider-img img {
-    margin-right: 250px;
-    width: 550px;
-    padding: 15px;
+    width: 100%;
 }
 
 .products {
@@ -445,16 +451,11 @@ body {
     }
 
     .slider-txt h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .slider-txt p {
         font-size: 16px;
-    }
-
-    .btn-1 {
-        padding: 10px 25px;
-        font-size: 14px;
     }
 
     .slider-img {
@@ -464,7 +465,8 @@ body {
 
     .slider-img img {
         margin-right: 0px;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .swiper-horizontal > .swiper-pagination-bullets, 
@@ -475,11 +477,8 @@ body {
     }
 
     .tabs {
-        padding: 50px 30px;
-    }
-
-    .tabs label {
-        width: 33%;
+        display: flex;
+        justify-content: space-around;
     }
 
     .info {
@@ -493,9 +492,8 @@ body {
     }
 
     .info-img img {
-        width: 400px;
-        height: 200px;
-        margin-bottom: 25px;
+        width: 100%;
+        height: auto;
     }
 
     .info-txt {
@@ -504,14 +502,10 @@ body {
     }
 
     .info-txt h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .info-txt p {
-        font-size: 16px;
-    }
-
-    .btn-1 {
         font-size: 16px;
     }
 
@@ -533,10 +527,6 @@ body {
         justify-content: center;
     }
 
-    .social img {
-        margin: 8px 0 0 0;
-    }
-
     .footer {
         padding: 30px;
         flex-direction: column;
@@ -547,4 +537,28 @@ body {
         margin: 25px 0px 10px 0px;
     }
 
+    .botones {
+        width: 250px;
+    }
+
+    .botones a {
+        width: 150px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .tabs label {
+        font-size: 10px;
+    }
+
+    .product {
+        width: 100%;
+    }
+    .product-txt {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
